@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="menu_btn_height">200dp</dimen>
+    <dimen name="menu_btn_margintop">2dp</dimen>
+    <dimen name="menu_btn_txtsize">34sp</dimen>
+    <dimen name="menu_heading">50dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="image_size">250dp</dimen>
+    <dimen name="padding_heading">10dp</dimen>
+</resources>

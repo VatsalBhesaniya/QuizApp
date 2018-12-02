@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollview"
+    style="@style/ScrollView"
+    tools:context=".CountriesActivity">
+
+    <RelativeLayout style="@style/RelativeLayout">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal.Progress"
+            android:max="100" />
+
+        <TextView
+            android:id="@+id/question"
+            style="@style/QuestionTextview" />
+
+        <ImageView
+            android:id="@+id/image_countries"
+            style="@style/QuestionImage" />
+
+        <LinearLayout
+            style="@style/AnswerLayout"
+            android:layout_below="@+id/image_countries"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <EditText
+                android:id="@+id/user_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/score"
+                android:hint="Type your answer here"
+                android:inputType="textCapWords"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/score"
+                style="@style/ScoreTextview" />
+
+            <RelativeLayout style="@style/BtnRelativeLayout">
+
+                <Button
+                    android:id="@+id/quit_button"
+                    style="@style/BtnQuit" />
+
+                <Button
+                    android:id="@+id/next"
+                    style="@style/BtnNext"
+                    android:onClick="checkAnswer" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

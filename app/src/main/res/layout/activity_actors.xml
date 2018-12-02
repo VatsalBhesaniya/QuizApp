@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollview"
+    style="@style/ScrollView"
+    tools:context=".ActorsActivity">
+
+    <RelativeLayout style="@style/RelativeLayout">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal.Progress"
+            android:max="100" />
+
+        <TextView
+            android:id="@+id/question"
+            style="@style/QuestionTextview" />
+
+        <LinearLayout
+            android:id="@+id/questionImages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/question"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image_actors_left"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_size"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="1"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/image_actors_right"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_size"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/AnswerLayout"
+            android:layout_below="@+id/questionImages">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_small">
+
+                <CheckBox
+                    android:id="@+id/answer_1"
+                    style="@style/CheckBox" />
+
+                <CheckBox
+                    android:id="@+id/answer_2"
+                    style="@style/CheckBox" />
+
+                <CheckBox
+                    android:id="@+id/answer_3"
+                    style="@style/CheckBox" />
+
+                <CheckBox
+                    android:id="@+id/answer_4"
+                    style="@style/CheckBox" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/score"
+                style="@style/ScoreTextview" />
+
+            <RelativeLayout style="@style/BtnRelativeLayout">
+
+                <Button
+                    android:id="@+id/quit_button"
+                    style="@style/BtnQuit" />
+
+                <Button
+                    android:id="@+id/next"
+                    style="@style/BtnNext" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

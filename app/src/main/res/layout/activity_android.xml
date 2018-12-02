@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollview"
+    style="@style/ScrollView"
+    tools:context=".AndroidActivity">
+
+    <RelativeLayout style="@style/RelativeLayout">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal.Progress"
+            android:max="100" />
+
+        <TextView
+            android:id="@+id/question"
+            style="@style/QuestionTextview" />
+
+        <LinearLayout
+            style="@style/AnswerLayout"
+            android:layout_below="@+id/question">
+
+            <RadioGroup
+                android:id="@+id/radio"
+                style="@style/RadioGroup">
+
+                <RadioButton
+                    android:id="@+id/answer_1"
+                    style="@style/RadioButton" />
+
+                <RadioButton
+                    android:id="@+id/answer_2"
+                    style="@style/RadioButton" />
+
+                <RadioButton
+                    android:id="@+id/answer_3"
+                    style="@style/RadioButton" />
+
+                <RadioButton
+                    android:id="@+id/answer_4"
+                    style="@style/RadioButton" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/score"
+                style="@style/ScoreTextview" />
+
+            <RelativeLayout style="@style/BtnRelativeLayout">
+
+                <Button
+                    android:id="@+id/quit_button"
+                    style="@style/BtnQuit" />
+
+                <Button
+                    android:id="@+id/next"
+                    style="@style/BtnNext" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="quit">Quit</string>
+    <string name="next">Next</string>
+    <string name="mathematics">Mathematics</string>
+    <string name="wonders">Wonders</string>
+    <string name="android">Android</string>
+    <string name="countries">Countries</string>
+    <string name="actors">Actors</string>
+    <string name="puzzle">Puzzle</string>
+    <string name="score">Score: %1$d</string>
+    <string name="toast_correct">Correct!</string>
+    <string name="toast_wrong">Wrong!</string>
+    <string name="submit_score">Submit Your Score</string>
+    <string name="btn_submit">Submit</string>
+    <string name="quiz_result">Congratulations\n You Completed the Quiz\n No Of Questions:  %1$d \nCorrect Answears: %2$d</string>
+    <string name="question_countries">Type the name of the highligted country</string>
+    <string name="question_actors">Select name of the actors shown in images below.</string>
+    <string name="error_message">Please select answer</string>
+    <string name="error_message_countries">Please type your answer</string>
+    <string name="error_message_actors">Please select 2 answers</string>
+</resources>
